@@ -1,0 +1,86 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1708013815516-c0014f9e72ba?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    background-size: cover;
+    color: #fff;
+}
+
+.SearchBar{
+    height: 10vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbarparentDiv{
+    width: 50%;
+    height: fit-content;
+    position: relative;
+}
+.inputfield{
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.searchIcon{
+    position: absolute;
+    right:4px ;
+    top: 4px;
+    border-radius: 50%;
+}
+.searchIcon:hover{
+    cursor: pointer;
+}
+
+.parentDiv{
+    height: 90vh;
+}
+.leftDiv{
+    width: 30%;
+    /* border: 1px solid black; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftChild{
+    background: rgba(212,212,212,0.4);
+    margin: auto;
+    height: 40vh;
+    width: 85%;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+}
+.currettempDiv{
+    font-size: large;
+}
+#cityName{
+    font-size: xx-large;
+}
+#cityTemp{
+    font-size: X-large;
+}
+#fivedaystitle{
+    font-size:x-large;
+}
+.RightDiv {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.rightrow{
+    height: 27vh;
+    width: 100%;
+}
+
+.extraMetric{
+    background: rgba(212,212,212,0.4);
+    padding: 5% 2%;
+    width: fit-content;
+    border-radius: 15px;
+    align-items: center;
+}
