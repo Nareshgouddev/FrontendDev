@@ -22,6 +22,7 @@ body{
     width: 100%;
     border-radius: 25px;
     padding: 10px;
+    outline: none;
 }
 
 .searchIcon{
@@ -36,10 +37,10 @@ body{
 
 .parentDiv{
     height: 90vh;
+    flex-direction: row;
 }
 .leftDiv{
     width: 30%;
-    /* border: 1px solid black; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -83,4 +84,79 @@ body{
     width: fit-content;
     border-radius: 15px;
     align-items: center;
+}
+
+.rowTwoDiv{
+     background:rgba(212, 212, 212, 0.4) ;
+     backdrop-filter: blur(15px);
+     width: 45%;
+     height: 85%;
+     border-radius: 15px;
+}
+.TodayTemp{
+    background: rgba(212, 212, 212, 0.4);
+    backdrop-filter: blur(15px);
+    width: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media only screen and (max-width:767px) {
+    .leftDiv{
+        width: 100%;
+    }
+    .RightDiv{
+        width: 100%;
+    }
+    .parentDiv {
+        height: 90vh;
+        flex-direction: column;
+    }
+    .SearchBar{
+        width: 100%;
+    }
+    .leftDiv {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+        margin-top:15px;
+    }
+    .searchbarparentDiv {
+        width: 85%;
+        height: fit-content;
+        position: relative;
+    }
+    .rowOne{
+        flex-wrap: wrap;
+        width: 85%;
+        margin: auto;
+    }
+    .rowTwo{
+        flex-direction: column;
+        gap: 10px;
+        height: 30vh;
+    }
+    .rowTwoDiv {
+        background: rgba(212, 212, 212, 0.4);
+        backdrop-filter: blur(15px);
+        width: 85%;
+        height: 85%;
+        border-radius: 15px;
+    }
+    .rowThree{
+        flex-wrap: wrap;
+    }
+    .todaytempDiv{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 15px;
+    }
 }
