@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border: 2px solid black;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+}
+
+.todo {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+input {
+    padding: 8px;
+    flex: 1;
+}
+
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+#taskList li {
+    margin-top: 10px;
+    padding: 8px;
+    background: #eee;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 
+#taskList li.done {
+    text-decoration: line-through;
+    opacity: 0.6;
+} */

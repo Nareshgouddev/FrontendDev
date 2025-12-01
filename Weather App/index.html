@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,21 +14,21 @@
 
     <div class="SearchBar">
         <div class="searchbarparentDiv">
-            <input type="text" class="inputfield">
+            <input type="search" class="inputfield" placeholder="Search city" aria-label="Search city">
             <img src="https://tse1.mm.bing.net/th/id/OIP.bH8ozYsCEwv_2ybRNvUu9gAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
-                style="width:40px" ; alt="" class="searchIcon">
+                style="width:40px;" alt="Search" class="searchIcon" onclick="fetchData()">
         </div>
     </div>
     <div class="parentDiv d-flex">
         <div class="leftDiv">
             <div class="currettempDiv leftChild p-3 d-flex flex-column gap-2">
-                <h6 class="m-0" id="cityName">city Name</h6>
-                <h5 class="m-0" id="cityTemp">0 &deg;C</h5>
-                <h6 class="m-0">Sky description</h6>
+                <h6 class="m-0" id="cityName">CityName</h6>
+                <h5 class="m-0"><span id="cityTemp">0</span> &deg;C</h5>
+                <h6 class="m-0" id="sky">Sky description</h6>
                 <hr class="line">
                 <div class="d-flex gap-2">
                     <img src="" alt="" width="25px">
-                    <h6>Date</h6>
+                    <h6 id="time">Date</h6>
                 </div>
                 <div class="d-flex gap-2">
                     <img src="" alt="" width="25px">
@@ -81,8 +81,8 @@
                 </div>
             </div>
         </div>
-        <div class="RightDiv">'
-            <div class="rightrow rawOne d-flex gap-2 justify-content-between align-items-center">
+        <div class="RightDiv">
+            <div class="rightrow rowOne d-flex gap-2 justify-content-between align-items-center">
                 <div class="extraMetric d-flex gap-3">
                     <img src="" alt="" width="35px">
                     <div>
@@ -112,42 +112,92 @@
                     </div>
                 </div>
             </div>
+
+            <div class="rightRow rowTwo d-flex justify-content-between align-items-center">
+                <div class="AQI rowTwoDiv p-3 d-flex flex-column gap-2">
+                    <h5>Air Quality Index(AQI)</h5>
+                    <div class="d-flex align-items-center">
+                        <img src="/" alt="" width="35px">
+                        <div class="text-center">
+                            <h6>AQI metric Name</h6>
+                            <h6>AQI metric value</h6>
+                        </div>
+                        <div class="text-center">
+                            <h6>AQI metric Name</h6>
+                            <h6>AQI metric value</h6>
+                        </div>
+                        <div class="text-center">
+                            <h6>AQI metric Name</h6>
+                            <h6>AQI metric value</h6>
+                        </div>
+                        <div class="text-center">
+                            <h6>AQI metric Name</h6>
+                            <h6>AQI metric value</h6>
+                        </div>
+                        <div class="text-center">
+                            <h6>AQI metric Name</h6>
+                            <h6>AQI metric value</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="sunrise rowTwoDiv p-3">
+                    <h5>Sunrise & Sunset</h5>
+                    <div class="d-flex justify-content-between">
+                        <div class="SunriseDiv d-flex gap-2 align-items-center">
+                            <img src="" alt="" width="35px">
+                            <div class="d-flex flex-column gap-3 ">
+                                <h6>Sunrise</h6>
+                                <h5 id="sunrisetime">6:00AM</h5>
+                            </div>
+                        </div>
+                        <div class="sunsetDiv d-flex align-items-center">
+                            <img src="" alt="" width="35px">
+                            <div class="d-flex flex-column gap-3 ">
+                                <h6 class="m-0">SunSet</h6>
+                                <h5 class="m-0" id="sunsettime">6:00AM</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="rightRow rowThree d-flex flex-column gap-2">
+                <h5 class="m-0">Today</h5>
+                <div class="d-flex justify-content-between todaytempDiv">
+                    <div class="TodayTemp">
+                        <h6 class="m-0">9:00AM</h6>
+                        <img src="" alt="" width="35px">
+                        <h5>15 &deg;C</h5>
+                    </div>
+                    <div class="TodayTemp">
+                        <h6 class="m-0">9:00AM</h6>
+                        <img src="" alt="" width="35px">
+                        <h5>15 &deg;C</h5>
+                    </div>
+                    <div class="TodayTemp">
+                        <h6 class="m-0">9:00AM</h6>
+                        <img src="" alt="" width="35px">
+                        <h5>15 &deg;C</h5>
+                    </div>
+                    <div class="TodayTemp">
+                        <h6 class="m-0">9:00AM</h6>
+                        <img src="" alt="" width="35px">
+                        <h5>15 &deg;C</h5>
+                    </div>
+                    <div class="TodayTemp">
+                        <h6 class="m-0">9:00AM</h6>
+                        <img src="" alt="" width="35px">
+                        <h5>15 &deg;C</h5>
+                    </div>
+                    <div class="TodayTemp">
+                        <h6 class="m-0">9:00AM</h6>
+                        <img src="" alt="" width="35px">
+                        <h5>15 &deg;C</h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -163,12 +213,46 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        function formatTimestamp(timestamp) {
+            const date = new Date(timestamp * 1000);
+            const formatted =
+                date.getDate().toString().padStart(2, "0") + "-" +
+                (date.getMonth() + 1).toString().padStart(2, "0") + "-" +
+                date.getFullYear() + " " +
+                date.getHours().toString().padStart(2, "0") + ":" +
+                date.getMinutes().toString().padStart(2, "0") + ":" +
+                date.getSeconds().toString().padStart(2, "0");
+
+            return formatted;
+        }
+
+        async function fetchData() {
+            let cityName = document.getElementsByClassName('inputfield')[0].value;
+            alert("Fetching Data")
+            const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=8f0719870af4a49d6a8e43f884ce344b`)
+            let formate = await data.json();
+            let responseCityName = formate.name;
+            let responsetemp = formate.main.temp;
+            let skyDescription = formate.weather[0].description;
+            const tempC = (responsetemp - 273.15).toFixed(2);
+            let datatime = formate.dt;
+            let sunrise = formate.sys.sunrise
+            let sunset = formate.sys.sunset
+            $('#cityName')[0].innerHTML = responseCityName;
+            $('#cityTemp')[0].innerHTML = tempC;
+            $('#sky')[0].innerHTML = skyDescription;
+            $('#time')[0].innerHTML = formatTimestamp(datatime);
+            $('#sunrisetime')[0].innerHTML = formatTimestamp(sunrise)
+            $('#sunsettime')[0].innerHTML = formatTimestamp(sunset)
+
+
+
+        }
+    </script>
 </body>
 
 </html>
