@@ -5,6 +5,7 @@
 }
 :root{
     --bg-primary-color:#0c0c0c;
+    --bg-fill-color:#fdfdfc;
 
     --text-primary-color:#f0f0f0;
     /* Spacing variables */
@@ -50,8 +51,6 @@ section{
     padding: var(--space-3xl);
     display: flex;
     flex-direction: column;
-    height: 100%;
-    /* background-color: rgb(7, 7, 119); */
     gap: var(--space-lg);
 
 }
@@ -77,4 +76,10 @@ section .infos{
     width: 30px;
     height: 30px;
     border: 1px solid var(--border-primary-color);
+}
+.fill{
+    background-color: var(--bg-fill-color);
+}
+.food{
+    background-color: aquamarine;
 }
