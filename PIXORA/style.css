@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.Full-page{
+    background-image: url("download.png");
+    width: 100%;
+    height:60em;
+}
+.head{
+    width: 100%;
+    height: 7%;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+}
+.head img{
+    cursor: pointer;
+    height: 60%;
+    width: 20%;
+    margin-top:1em ;
+}
+.head button{
+    color: #fff;
+    margin: 1em 2em;
+    background-color:rgb(47, 255, 47);
+    border-radius: 5px;
+    height:50%;
+    width: 6%;
+    border: 1px solid rgb(80, 80, 80);
+    cursor: pointer;
+}
