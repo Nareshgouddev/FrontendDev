@@ -69,3 +69,55 @@ html,body{
     font-weight: 700;
     font-family: "poppins","san-sarif";
 }
+.purchase-btn{
+    background-color: black;
+    color: #fff;
+    padding: 10px 7rem;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+    align-items: center;
+    border: black;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.purchase-btn span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.purchase-btn:hover span {
+    animation: moveText 1s ease;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateY(50px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+.head-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: -5px;
+    font-family: 'Helvetica';
+    margin-top: 5rem;
+}
+.purchase-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
