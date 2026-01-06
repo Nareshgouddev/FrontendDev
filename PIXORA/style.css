@@ -309,4 +309,210 @@ body.auth-page::before{
         align-items: flex-start;
     }
 }
-
+          .container {
+              max-width: 1200px;
+              margin: 0 auto;
+              padding: 20px;
+          }
+    
+          /* Header Section */
+          .header {
+              text-align: center;
+              padding: 40px 20px 60px;
+          }
+    
+          .badge {
+              display: inline-block;
+              background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+              color: white;
+              padding: 8px 20px;
+              border-radius: 30px;
+              font-size: 14px;
+              font-weight: 600;
+              letter-spacing: 1px;
+              margin-bottom: 20px;
+          }
+    
+          .main-title {
+              font-size: 3.5rem;
+              font-weight: 800;
+              background: linear-gradient(90deg, #60a5fa, #c4b5fd);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+              margin-bottom: 20px;
+              line-height: 1.2;
+          }
+    
+          .subtitle {
+              font-size: 1.2rem;
+              color: #94a3b8;
+              max-width: 600px;
+              margin: 0 auto 40px;
+          }
+    
+          /* Features Grid */
+          .features-grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+              gap: 30px;
+              margin-top: 40px;
+          }
+    
+          .feature-card {
+              background: rgba(30, 41, 59, 0.7);
+              border-radius: 16px;
+              padding: 30px;
+              transition: all 0.3s ease;
+              border: 1px solid rgba(100, 116, 139, 0.2);
+              position: relative;
+              overflow: hidden;
+          }
+    
+          .feature-card:hover {
+              transform: translateY(-5px);
+              box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+              border-color: rgba(96, 165, 250, 0.4);
+          }
+    
+          .feature-icon {
+              width: 60px;
+              height: 60px;
+              border-radius: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 20px;
+              font-size: 24px;
+          }
+    
+          .icon-1 {
+              background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+          }
+    
+          .icon-2 {
+              background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+          }
+    
+          .icon-3 {
+              background: linear-gradient(135deg, #10b981, #047857);
+          }
+    
+          .icon-4 {
+              background: linear-gradient(135deg, #f59e0b, #d97706);
+          }
+    
+          .icon-5 {
+              background: linear-gradient(135deg, #ef4444, #b91c1c);
+          }
+    
+          .icon-6 {
+              background: linear-gradient(135deg, #06b6d4, #0e7490);
+          }
+    
+          .feature-title {
+              font-size: 1.4rem;
+              font-weight: 700;
+              margin-bottom: 12px;
+              color: #f1f5f9;
+          }
+    
+          .feature-description {
+              color: #94a3b8;
+              font-size: 0.95rem;
+              margin-bottom: 10px;
+          }
+    
+          .feature-tag {
+              display: inline-block;
+              background: rgba(59, 130, 246, 0.1);
+              color: #60a5fa;
+              padding: 4px 12px;
+              border-radius: 20px;
+              font-size: 0.8rem;
+              font-weight: 600;
+              margin-top: 10px;
+          }
+    
+          /* Call to Action */
+          .cta-section {
+              text-align: center;
+              margin: 80px auto 40px;
+              max-width: 800px;
+              padding: 40px;
+              background: rgba(30, 41, 59, 0.7);
+              border-radius: 20px;
+              border: 1px solid rgba(100, 116, 139, 0.2);
+          }
+    
+          .cta-title {
+              font-size: 2.2rem;
+              font-weight: 700;
+              margin-bottom: 20px;
+              background: linear-gradient(90deg, #60a5fa, #c4b5fd);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+          }
+    
+          .cta-button {
+              display: inline-block;
+              background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+              color: white;
+              padding: 16px 40px;
+              border-radius: 50px;
+              font-size: 1.1rem;
+              font-weight: 600;
+              text-decoration: none;
+              margin-top: 20px;
+              transition: all 0.3s ease;
+              box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+          }
+    
+          .cta-button:hover {
+              transform: translateY(-3px);
+              box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+          }
+    
+          .cta-button i {
+              margin-left: 8px;
+          }
+    
+          /* Footer */
+          .footer {
+              text-align: center;
+              padding: 40px 20px;
+              color: #64748b;
+              font-size: 0.9rem;
+              border-top: 1px solid rgba(100, 116, 139, 0.2);
+              margin-top: 40px;
+          }
+    
+          /* Responsive Design */
+          @media (max-width: 768px) {
+              .main-title {
+                  font-size: 2.5rem;
+              }
+    
+              .features-grid {
+                  grid-template-columns: 1fr;
+              }
+    
+              .cta-title {
+                  font-size: 1.8rem;
+              }
+          }
+    
+          @media (max-width: 480px) {
+              .main-title {
+                  font-size: 2rem;
+              }
+    
+              .feature-card {
+                  padding: 20px;
+              }
+    
+              .cta-section {
+                  padding: 30px 20px;
+              }
+          }
