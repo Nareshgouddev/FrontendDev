@@ -310,6 +310,114 @@ body.auth-page::before{
     }
 }
 
+
+
+.bottom_layer{
+    margin: 7% 10%;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+
+.figma{
+    width: 8rem;
+}
+
+.figma div i{
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 10px;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sec_pg{
     display: flex;
     flex-direction: row;
@@ -340,4 +448,41 @@ body.auth-page::before{
 }
 .second_page-right div{
 
+}
+
+/* <----------------------carousal ------------------------->*/
+.carousal{
+    margin: 100px auto;
+    width: 90%;
+    border: 3px solid red;
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousal::after{
+    display: none;
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation:spin 5s infinite linear;
+    padding-right: 1em;
+}
+
+.card{
+    flex: 0 0 5em;
+    height: 1rem;
+    padding:1em ;
+    background-color: grey;
+    font-size: large;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+
+}
+@keyframes spin{
+    from {translate: 0;}
+    to{translate: -100%;}
 }
