@@ -286,18 +286,15 @@ body.auth-page::before{
     transform: translateY(-2px);
     box-shadow: 0 16px 32px rgba(11, 227, 11, 0.35);
 }
-
 .auth-form__submit:focus-visible{
     outline: 3px solid rgba(47,255,47,0.6);
     outline-offset: 3px;
 }
-
 .auth__footer{
     text-align: center;
     color: rgba(255,255,255,0.75);
     font-size: 0.95rem;
 }
-
 @media (max-width: 480px){
     .auth{
         padding: 2rem 1.5rem;
@@ -309,21 +306,15 @@ body.auth-page::before{
         align-items: flex-start;
     }
 }
-
-
-
 .bottom_layer{
     margin: 7% 10%;
     display: flex;
     width: 80%;
     justify-content: space-between;
 }
-
-
 .figma{
     width: 8rem;
 }
-
 .figma div i{
     border: 1px solid white;
     border-radius: 100%;
@@ -332,89 +323,10 @@ body.auth-page::before{
 }
 
 
+.sec_pg{
+    margin-top: 10rem;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -433,32 +345,52 @@ body.auth-page::before{
     font-size: 25px;
 }
 .second_page-left h1{
-    font-size:6rem;  
+    font-size:4rem;  
+}
+.second_page-left h1::first-letter{
+    color: #0b620b;
 }
 .second_page-left h1 span{
     color: orangered;
 }
 .second_page-right{
     width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-shrink: unset;
-    gap: 40px;
-
+    grid: template rows 2px; 
+    align-items: center;
+    align-content:center ;
 }
-.second_page-right div{
 
+.second_page-right_cards {
+    border: 2px solid rgb(226, 220, 220);
+    align-items: center;
+    padding: 10px;
+    border-radius:20px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+
+
 
 /* <----------------------carousal ------------------------->*/
 .carousal{
-    margin: 100px auto;
+    margin-top: 100px;
     width: 90%;
-    border: 3px solid red;
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden auto;
 }
 
+.carousal2 {
+    width: 90%;
+    margin: 20px;
+    display: flex;
+    overflow-x: hidden auto;
+}
+.carousal3 {
+    width: 90%;
+    display: flex;
+    overflow-x: hidden auto;
+}
 .carousal::after{
     display: none;
 }
@@ -467,7 +399,16 @@ body.auth-page::before{
     align-items: center;
     justify-content: center;
     gap: 1em;
-    animation:spin 5s infinite linear;
+    animation:spin 8s infinite linear;
+    padding-right: 1em;
+}
+
+.group1{
+    animation: spin 12s infinite linear;
+    padding-right: 1em;
+}
+.group2{
+    animation: spin2 8s infinite linear;
     padding-right: 1em;
 }
 
@@ -475,14 +416,33 @@ body.auth-page::before{
     flex: 0 0 5em;
     height: 1rem;
     padding:1em ;
-    background-color: grey;
     font-size: large;
     border-radius: 5px;
     text-align: center;
-    align-content: center;
+    align-content: center; 
+    border: 1px solid rgb(7, 7, 7);
+   box-shadow: 3px 4px black;
 
 }
 @keyframes spin{
     from {translate: 0;}
     to{translate: -100%;}
+}
+@keyframes spin2 {
+    from {
+        translate: -100%;
+    }
+
+    to {
+        translate: 0%;
+    }
+}
+
+
+.third_page{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 25rem;
 }
