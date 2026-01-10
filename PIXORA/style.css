@@ -331,9 +331,12 @@ body.auth-page::before{
 
 
 .sec_pg{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 6rem;
+
 }
 .second_page-left{
     display: flex;
@@ -354,20 +357,24 @@ body.auth-page::before{
     color: orangered;
 }
 .second_page-right{
-    width: 60%;
-    grid: template rows 2px; 
+    display: grid;
+    width: 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     align-content:center ;
+    gap: 6rem;
 }
 
 .second_page-right_cards {
-    border: 2px solid rgb(226, 220, 220);
     align-items: center;
     padding: 10px;
     border-radius:20px;
+    width: 70%;
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 
 
@@ -438,11 +445,37 @@ body.auth-page::before{
     }
 }
 
-
+.border1{
+    margin: 18px;
+    border-bottom: 2px solid black;
+}
+.border2 {
+    margin: 10px;
+    border-bottom: 5px solid black;
+}
+.border3 {
+    border-bottom: 10px solid black;
+}
 .third_page{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
     display: flex;
-    justify-items: center;
-    justify-content: center;
-    width: 25rem;
-    height: 25rem;
+    flex-direction: row;
+}
+.third_page_right{
+    width: 50%;
+}
+.third_page_left{
+    width: 50%;
+}
+.carousal{
+    color: #2fff2f;
+    background-color: black;
+}
+#count{
+    color: orangered;
+    font-size: 16rem;
+    padding: 20px;
 }
